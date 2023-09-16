@@ -1,0 +1,18 @@
+
+//DEV
+###Get all contacts
+GET http://localhost:3000/contacts HTTP/1.1
+
+
+###Get contact by Id
+GET http://localhost:3000/contacts/65055a6041598332395ca817 HTTP/1.1
+
+
+
+//PRODUCTION
+###Get all contacts
+GET https://project1-9wq1.onrender.com/contacts HTTP/1.1
+
+
+###Get contact by Id
+GET https://project1-9wq1.onrender.com/contacts/65055a6041598332395ca817 HTTP/1.1
