@@ -45,3 +45,31 @@ GET https://project1-9wq1.onrender.com/contacts HTTP/1.1
 
 ###Get contact by Id
 GET https://project1-9wq1.onrender.com/contacts/650ec559fedb3fe85a2e7495 HTTP/1.1
+
+###Create contact
+POST https://project1-9wq1.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName": "Shannon",
+"lastName": "Chirunga",
+"email": "shannonchirunga@gmail.com",
+"favouriteColor": "pink",
+"birthday": "30 October 2004"
+}
+
+###Update contact
+PUT https://project1-9wq1.onrender.com/650ec3db478024447d296b2c HTTP/1.1
+content-type: application/json
+
+  {
+ 
+    "firstName": "Shannon",
+    "lastName": "Chirunga",
+    "email": "shannonchirunga@gmail.com",
+    "favouriteColor": "pink",
+    "birthday": "30 October 2004"
+  }
+
+###Delete contact
+DELETE https://project1-9wq1.onrender.com/contacts/650ec559fedb3fe85a2e7495 HTTP/1.1
